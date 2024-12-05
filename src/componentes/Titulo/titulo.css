@@ -7,20 +7,22 @@
     --ani-color: rgba(95, 3, 244, 0);
     --color-gar: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
     letter-spacing: 3px;
-    font-size: 2.3em;
+    font-size: 1.4vw;
     font-family: var(--fonte03);
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 1px var(--stroke-color);
     cursor: pointer;
-    top: 55px;
-    left: 23px;
-    margin: 0px 0px 0px 0px;
-   
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex; 
+    margin: 15px 0px 0px 0px;
+
   }
   
   .front-text {
-    position: absolute;
+   
     top: 0;
     left: 0;
     width: 0%;
@@ -44,7 +46,7 @@
 
   }
   
-mark {
+  mark {
 
     font-family: var(--fonte02);
     font-weight: bold;

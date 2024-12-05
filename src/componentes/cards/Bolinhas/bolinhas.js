@@ -1,11 +1,11 @@
 
-import './decoracao.css';
+import './bolinhas.css';
 
-export function Decoracao() {
+export function Bolinhas() {
 
   return (
-    <section className='decoracao'>
-      <div className="lava-lamp">
+    <section className='continerBolinha01'>
+      <div className="bolinhas01">
         <div className="bubble"></div>
         <div className="bubble1"></div>
         <div className="bubble2"></div>
@@ -16,5 +16,3 @@ export function Decoracao() {
     </section>
   );
 }
-
-

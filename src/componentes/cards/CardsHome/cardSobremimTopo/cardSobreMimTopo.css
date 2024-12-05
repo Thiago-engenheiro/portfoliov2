@@ -1,12 +1,11 @@
 
 .cardSobreMimTopo {
-
-    height: 75px;
-    width: 550px;
+    display: flex;
+    height: calc(100% + -35px);
+    width: 100%;
     background: var(--corEscuroGradiente01);
     background-size: 100% 300%;
     animation: mover-gradient 5s infinite linear;
-    margin: 0px 0vh 0px 390px;
     padding: 20px;
     box-shadow: 4px 0px 90px 0 rgba(255,255,255,.5),
     -4px -4px 6px 0 rgba(116, 125, 136, .5), 

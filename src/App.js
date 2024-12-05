@@ -1,8 +1,8 @@
 import "./App.css";
 import BarraLateral from "./componentes/barraLateral";
-import CardCurriculo from "./componentes/cardCurriculo";
-import CardGif from "./componentes/cardGif";
-import { CardMeusProjetos02 } from "./componentes/cardMeusProjetos2/cardMeusProjetos02";
+import CardCurriculo from "./componentes/cards/CardsHome/cardCurriculo";
+import CardGif from "./componentes/cards/CardsHome/cardGif";
+import CardMeusProjetos02 from "./componentes/cards/CardsHome/cardMeusProjetos2";
 import CardBlog from "./componentes/cards/CardsHome/cardBlog";
 import CardCarreira from "./componentes/cards/CardsHome/cardCarreira";
 import CardCertificado from "./componentes/cards/CardsHome/cardCertificado";
@@ -14,13 +14,19 @@ import CardMinhaFoto from "./componentes/cards/CardsHome/cardMinhaFoto";
 import CardMusica from "./componentes/cards/CardsHome/cardMusica";
 import CardSobreMim from "./componentes/cards/CardsHome/cardSobreMim";
 import CardSobreMimTopo from "./componentes/cards/CardsHome/cardSobremimTopo";
-import { Decoracao } from "./componentes/decoracao/decoracao";
-
 import { Titulo } from "./componentes/Titulo/Titulo";
+import { Bolinhas } from "./componentes/cards/Bolinhas/bolinhas";
+import Bolinhas2 from "./componentes/cards/bolinha02";
+import Bolinhas3 from "./componentes/cards/bolinha03";
+import Bolinhas4 from "./componentes/cards/bolinha04";
+
+
+
 
 function App() {
   return (
     <div className="App">
+
       <section>
 
         <BarraLateral></BarraLateral>
@@ -29,72 +35,30 @@ function App() {
 
       <main className="continerConteudo">
 
-        <Titulo></Titulo>
-
         <section className="homeCards">
 
-            <div>
-
-              <CardSobreMimTopo></CardSobreMimTopo>
-              <CardSobreMim></CardSobreMim>
-              <CardMeusProjetos></CardMeusProjetos>
-              
-
-            </div>
-
-            <div className="continerHome02">
-
-              <CardMinhaFoto></CardMinhaFoto>
-              <CardMeusProjetos02></CardMeusProjetos02>
-
-            </div>
-
-          <div className="continerHome03">
-
-              <CardLinks></CardLinks>
-
-            <div className="continerHome03__divisao">
-
-              <CardCarreira></CardCarreira>
-
-            </div>
-
-            <div className="continerHome03__divisao">
-
-              <CardMusica></CardMusica>
-
-              <CardCurriculo></CardCurriculo>
-
-            </div>
-
-            <div className="continerHome03__divisao">
-
-              <CardCertificado></CardCertificado>
-
-              <CardBlog></CardBlog>
-
-
-            </div>
-
-            <div className="continerHome03__divisao">
-
-              <CardGif></CardGif>
-
-              <CardFaleComigo></CardFaleComigo>
-
-              <Decoracao></Decoracao>
-
-            </div>
-
-            
-
-          </div>
-
+          <Titulo></Titulo>
+          <CardSobreMimTopo></CardSobreMimTopo>
+          <CardSobreMim></CardSobreMim>
+          <CardMeusProjetos></CardMeusProjetos>
+          <CardMinhaFoto></CardMinhaFoto>
+          <CardMeusProjetos02></CardMeusProjetos02>
+          <CardLinks></CardLinks>
+          <CardCarreira></CardCarreira>
+          <Bolinhas2></Bolinhas2>
+          <Bolinhas3></Bolinhas3>
+          <Bolinhas4></Bolinhas4>
+          <CardMusica></CardMusica>
+          <CardCurriculo></CardCurriculo>
+          <CardCertificado></CardCertificado>
+          <CardBlog></CardBlog>
+          <CardGif></CardGif>
+          <CardFaleComigo></CardFaleComigo>
+          <Bolinhas></Bolinhas>
           <CardConhecimento></CardConhecimento>
          
           
-
-          
+        
 
         </section>
       </main>

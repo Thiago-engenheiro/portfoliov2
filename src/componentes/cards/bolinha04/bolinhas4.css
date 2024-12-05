@@ -1,0 +1,80 @@
+.bolinhas04{
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+   background: var(--corEscuroGradiente01);
+    background-size: 100% 300%;
+    animation: mover-gradient 5s infinite linear;
+    margin: 0;
+    padding: 20px;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+      -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+      inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    
+  }
+  
+  .Quatrobubble,
+  .Quatrobubble1,
+  .Quatrobubble2,
+  .Quatrobubble3,
+  .Quatrobubble4,
+  .Quatrobubble5 {
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: direta2 20s ease-in-out infinite;
+    animation-delay: 10s;
+    opacity: 0;
+  }
+  
+  .Quatrobubble {
+    background: linear-gradient(to bottom, #e64980, #ff8787);
+    left: 5px;
+    top: 1px;
+    animation-duration: 20s;
+  }
+  
+  .Quatrobubble1 {
+    background: linear-gradient(to bottom, #82c91e, #3bc9db);
+    left: 30px;
+    animation-duration: 20s;
+    top: 40px;
+  }
+  
+  .Quatrobubble2 {
+    background: linear-gradient(to bottom, #7950f2, #f783ac);
+    left: 40px;
+    animation-duration: 20s;
+    top: 10px;
+  }
+  
+  .Quatrobubble3 {
+    background: linear-gradient(to bottom, #4481eb, #04befe);
+    left: 60px;
+    animation-duration: 20s;
+    top: 20px;
+  }
+  
+  .Quatrobubble4 {
+    background: linear-gradient(to bottom, #ff6f61, #ffa94d);
+    left: 90px;
+    animation-duration: 20s;
+    top: 30px;
+  }
+  
+  .Quatrobubble5 {
+    background: linear-gradient(to bottom, #ffdf65, #ffe066);
+    left: 70px;
+    animation-duration: 20s;
+    top: 40px;
+  }
+  
