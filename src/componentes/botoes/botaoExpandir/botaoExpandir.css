@@ -1,0 +1,62 @@
+.container {
+  --size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: var(--size);
+  user-select: none;
+  fill: white;
+  top: 40px;
+}
+
+.botao-expandir {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao-expandir.ativo {
+  animation: pulsar 0.6s ease-out;
+}
+
+.container:hover {
+  transform: scale(1.1);
+}
+
+.container:active {
+  animation: pulse 1s;
+}
+
+.container .expand,
+.container .compress {
+  position: absolute;
+  animation: keyframes-fill 0.5s;
+}
+
+/* Oculta o ícone de expandir quando estiver expandido */
+.container .expand.hidden {
+  display: none;
+}
+
+/* Oculta o ícone de comprimir quando não estiver expandido */
+.container .compress.hidden {
+  display: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Animação do ícone ao ativar o botão */
+.ham.active {
+  animation: pulse 1s;
+}

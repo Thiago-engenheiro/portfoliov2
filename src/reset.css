@@ -1,0 +1,45 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+
+  line-height: 1.5; 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+  font-family: sans-serif; 
+  
+}
+
+
+ul, ol {
+  list-style: none;
+}
+
+
+a {
+
+  text-decoration: none;
+  color: inherit;
+
+}
+
+table {
+
+  border-collapse: collapse;
+  border-spacing: 0;
+
+}
+
+mark {
+
+  background: none; 
+  color: inherit;   
+  font-weight: normal;
+  text-decoration: none; 
+
+}

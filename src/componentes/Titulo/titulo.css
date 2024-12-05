@@ -1,0 +1,58 @@
+.button {
+  
+    position: relative;
+    border: none;
+    background: transparent;
+    --stroke-color: black;
+    --ani-color: rgba(95, 3, 244, 0);
+    --color-gar: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    letter-spacing: 3px;
+    font-size: 2.3em;
+    font-family: var(--fonte03);
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--stroke-color);
+    cursor: pointer;
+    top: 55px;
+    left: 23px;
+    margin: 0px 0px 0px 0px;
+   
+  }
+  
+  .front-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    background: var(--color-gar);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200%;
+    overflow: hidden;
+    transition: all 1s;
+    animation: 8s ani infinite;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    width: 100%;
+    -webkit-text-stroke: 1px var(--ani-color);
+    
+  }
+
+  .actual-text {
+
+    border-bottom: 2px solid
+
+  }
+  
+mark {
+
+    font-family: var(--fonte02);
+    font-weight: bold;
+    color: black;
+    --stroke-color: black;
+    --ani-color: rgba(95, 3, 244, 0);
+    --color-gar: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    color: transparent;
+    
+}
+  

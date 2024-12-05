@@ -1,38 +1,45 @@
+@import url('./variables.css');
+@import url('./animacoes.css');
+
+.continerConteudo {
+
+    background: var(--corClaro03);
+    
+}
+  
 .App {
-  text-align: center;
+  
+    display: flex;
+    font-family: var(--fonte01);
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.esconder {
+
+    display: none;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homeCards {
+
+    display: flex;
+    flex-wrap: wrap;
+   
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.continerHome03__divisao {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0px 0px 20px 0px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.teste {
+
+    display: flex;
+    flex-wrap: wrap;
+   
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

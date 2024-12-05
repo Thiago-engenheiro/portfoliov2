@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+
+    font-family: 'Gilroy-Light';
+    src: url('/src/extras/fontes/Gilroy-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: 'Gilroy-SemiBold';
+    src: url('/src/extras/fontes/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: 'Gilroy-ThinItalic';
+    src: url('/src/extras/fontes/Gilroy-ThinItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: 'Gilroy-Thin';
+    src: url('/src/extras/fontes/Gilroy-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+
+    /* Variáveis para fontes */
+
+    --fonte01: "Kanit", sans-serif;
+    --fonte02: 'Gilroy-SemiBold', sans-serif;
+    --fonte03: 'Gilroy-ThinItalic', sans-serif;
+    --fonte04: 'Gilroy-Light', sans-serif;
+    --fonte05: 'Gilroy-Thin', sans-serif;
+      
+    /* Variáveis para cores */
+
+        /* cor claras */
+
+        --corClaro01: #F9F1F0;
+        --corClaro02:  #D8C9C7;
+        --corClaro03:  white;
+        --corClaro04:  #E4D2D0;
+        --corClaro05: #D5C1B5;
+        --corClaro06: #D8C9C7;
+
+        /* cor escuras */
+
+        --corEscuro01:  black;
+        --corEscuro02:  #131112;
+        --corEscuro03:  #3B3833;
+        --corEscuro04: #2E2B26;
+        --corEscuro05: #4F4A45;
+        --corEscuro06:  #020308;
+
+        /* cor gradiente */
+
+        --corEscuroGradiente01: linear-gradient(to bottom,
+
+            var(--corClaro04), 
+            var(--corClaro05), 
+            var(--corClaro06)
+
+        );
+
+        --corEscuroGradiente02: linear-gradient(to bottom,
+
+            var(--corEscuro06),
+            var(--corEscuro04), 
+            var(--corEscuro05), 
+            var(--corEscuro04), 
+            var(--corEscuro06)
+
+        );
+
+       
+        /* cor Global */
+
+        --cor-destaque: #00B5DE;
+        
+}

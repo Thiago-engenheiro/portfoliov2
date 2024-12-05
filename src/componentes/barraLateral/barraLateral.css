@@ -1,0 +1,148 @@
+.barra-lateral {
+
+ 
+  background: var(--corEscuroGradiente02); 
+  background-size: 100% 300%;
+ 
+  height: 100vh;
+  width: 100px;
+  padding: 20px 0px; 
+  border: 3px solid transparent;
+  border-width: 0px 2px 0px 0px;
+  animation: 
+  rainbow-border2 5s infinite linear, 
+  mover-gradient 10s infinite linear;
+    
+}
+
+.barra-lateral div {
+
+  text-align: center;
+
+}
+
+.logotipo {
+
+  width: 50px;
+  transform: scaleX(-1);
+
+}
+
+.barra-lateral li:first-child {
+   
+  margin: 50px 0px 0px 0px;
+    
+}
+
+.lista {
+
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100px;
+  border-radius: 90px 0 0 90px;
+  
+}
+
+
+.lista:hover .ham6 .line {
+   
+  stroke:black;
+  
+}
+
+.lista:hover .continerIcone .container {
+   
+  fill: black;
+  
+}
+
+.listaAfastar {
+
+  margin: 100px 0px 0px 0px;
+  
+}
+
+.lista:hover {
+
+  background: var(--corClaro03);
+  
+}
+
+.lista:hover .navegacaoLink {
+
+  filter: invert(1);
+  
+}
+
+.continerIcone {
+
+  width: 80px;
+  height: 80px;
+
+}
+
+.icone {
+
+  width: 40px;
+  cursor: pointer;
+  margin: 20px 0px 20px 0px;
+
+}
+
+.primeiro {
+
+  margin: 500px;
+
+}
+
+.expandir:hover {
+
+  display: inline-block;  
+  transition: box-shadow 0.3s ease;
+  animation: pulsar 9.9s infinite ease-in-out; 
+   
+}
+
+.navegacaoLink:hover {
+  
+  transform: scale(1.1);
+
+}
+
+.navegacaoLink:active {
+
+  animation: pulsar 1s;
+
+}
+
+.listaAtiva {
+
+  background: var(--corClaro03);
+  border: 3px solid transparent;
+  border-width: 3px 0px 3px 3px;
+  animation: rainbow-border2 5s infinite linear;
+
+}
+
+.linkativo {
+
+  display: inline-block;  
+  transition: box-shadow 0.3s ease; 
+  filter: invert(1);
+
+}
+
+.nomeDaPagina {
+
+  transform: rotate(270deg);
+  color: white; 
+  font-size: 35px;
+  margin: 100px 0px 0px 0px ;
+  letter-spacing: 7px;
+  font-family: var(--fonte01);
+    
+}
+

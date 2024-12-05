@@ -1,0 +1,171 @@
+@keyframes pulsar {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2); 
+    }
+    100% {
+      transform: scale(1); 
+    }
+}
+
+@keyframes mover-gradient {
+
+    0% {
+      background-position: 0% 0%; 
+    }
+    50% {
+      background-position: 0% 100%; 
+    }
+    100% {
+      background-position: 0% 0%; 
+    }
+
+}
+
+@keyframes rainbow-border2 {
+  0% {
+    border-color: red;
+  }
+  14% {
+    border-color: orange;
+  }
+  28% {
+    border-color: yellow;
+  }
+  42% {
+    border-color: green;
+  }
+  57% {
+    border-color: blue;
+  }
+  71% {
+    border-color: indigo;
+  }
+  85% {
+    border-color: violet;
+  }
+  100% {
+    border-color: red;
+  }
+}
+
+@keyframes keyframes-fill {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.2);
+  }
+}
+
+@keyframes moverSeta {
+    
+  0% {
+      transform: translateX(0); 
+  }
+  50% {
+      transform: translateX(15px); 
+  }
+  100% {
+      transform: translateX(0); 
+  }
+}
+
+@keyframes moverSeta02 {
+
+
+  0% {
+      transform: translateX(0) rotate(180deg);; 
+  }
+  50% {
+      transform: translateX(-15px) rotate(180deg);
+  }
+  100% {
+      transform: translateX(0) rotate(180deg);
+  }
+}
+
+@keyframes cloud-move {
+	0% {
+	  transform: translateX(0px);
+	}
+  
+	40% {
+	  transform: translateX(4px);
+	}
+  
+	80% {
+	  transform: translateX(-4px);
+	}
+  
+	100% {
+	  transform: translateX(0px);
+	}
+}
+
+@keyframes star-twinkle {
+	0% {
+	  transform: scale(1);
+	}
+  
+	40% {
+	  transform: scale(1.2);
+	}
+  
+	80% {
+	  transform: scale(0.8);
+	}
+  
+	100% {
+	  transform: scale(1);
+	}
+}
+  
+@keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    50% {
+      background-position: 400%;
+    }
+  
+    100% {
+      background-position: 0%;
+    }
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(205px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+  
