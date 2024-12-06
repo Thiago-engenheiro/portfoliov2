@@ -1,6 +1,5 @@
 .barra-lateral {
 
- 
   background: var(--corEscuroGradiente02); 
   background-size: 100% 300%;
   height: 100vh;
@@ -22,7 +21,7 @@
 
 .logotipo {
 
-  width: 50px;
+  width: 4vh;
   transform: scaleX(-1);
 
 }
@@ -39,7 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80px;
+  height: 6vh;
   width: 100px;
   border-radius: 90px 0 0 90px;
   
@@ -60,7 +59,7 @@
 
 .listaAfastar {
 
-  margin: 100px 0px 0px 0px;
+  margin: 7.5vh 0px 0px 0px;
   
 }
 
@@ -85,7 +84,7 @@
 
 .icone {
 
-  width: 40px;
+  width: 4vh;
   cursor: pointer;
   margin: 20px 0px 20px 0px;
 
@@ -138,8 +137,8 @@
 
   transform: rotate(270deg);
   color: white; 
-  font-size: 35px;
-  margin: 100px 0px 0px 0px ;
+  font-size: 2vh;
+  margin: 5vh 0px 0px 0px ;
   letter-spacing: 7px;
   font-family: var(--fonte01);
     

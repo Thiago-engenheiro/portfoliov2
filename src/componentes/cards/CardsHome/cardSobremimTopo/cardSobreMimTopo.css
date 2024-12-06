@@ -17,6 +17,43 @@
     letter-spacing: 1px;
     position: relative;
     
+    
 } 
+
+.CardSobreMim__direto {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 25px 0px 0px 0px;
+}
+
+.CardSobreMim__direto__titulo {
+
+    font-size: calc(1.0vw + 1.0vh);
+  
+}
+
+.Seta {
+
+    filter: invert(1);
+    width: 2.75vw;
+    transition: border-color 0.3s ease;
+    height: 5.25vh;
+    transition: border-color 0.3s ease, transform 0.3s ease; 
+    border: 4px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 4px 8px white;
+     
+  }
+  
+.Seta:hover {
+  
+    transform: scale(1.1);
+    animation: rainbow-border 5s infinite linear;
+  
+}
 
  

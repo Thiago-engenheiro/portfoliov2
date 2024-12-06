@@ -1,0 +1,95 @@
+.card {
+  
+  animation: mover-gradient 5s infinite linear;
+  border-radius: 1.25rem;
+  width: 100%;
+  position: relative;
+
+
+}
+
+  .loader {
+    color: black;
+    font-family: var(--fonte02);
+    font-weight: 500;
+    font-size: 30px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 40px;
+   
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 8px;
+    
+  }
+  
+  .words {
+    overflow: hidden;
+    position: relative;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  .words::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+    var(--bg-color) 10%,
+    transparent 30%,
+    transparent 70%,
+    var(--bg-color) 90%
+  );
+
+    z-index: 20;
+  }
+  
+  .word {
+
+    display: block;
+    height: 100%;
+    color: black;
+    animation: spin_4991 15s infinite;
+    
+  }
+
+  .w1 { color: #d5c1b7; } /* React (azul escuro) */
+  .w2 { color: #D84B16; } /* Front-End (laranja escuro) */
+  .w3 { color: #E91E63; } /* UX Designer (rosa escuro) */
+  .w4 { color: #388E3C; } /* Comunicação (azul escuro) */
+  .w5 { color: #5c309a; } /* Acessibilidade (verde escuro) */
+  .w9 { color: #007ACC; } /* Design (amarelo dourado) */
+  .w7 { color: #d5c1b7; } /* Repetição de React */
+  
+  @keyframes spin_4991 {
+    0% {
+      transform: translateY(0);
+    }
+    10% {
+      transform: translateY(-102%);
+    }
+    25% {
+      transform: translateY(-100%);
+    }
+    35% {
+      transform: translateY(-202%);
+    }
+    50% {
+      transform: translateY(-200%);
+    }
+    60% {
+      transform: translateY(-302%);
+    }
+    75% {
+      transform: translateY(-300%);
+    }
+    85% {
+      transform: translateY(-402%);
+    }
+    100% {
+      transform: translateY(-400%);
+    }
+  }
+
+  
+  

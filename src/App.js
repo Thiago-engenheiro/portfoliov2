@@ -24,7 +24,9 @@ import Bolinhas4 from "./componentes/cards/bolinha04";
 
 
 function App() {
+  
   return (
+    <html>
     <div className="App">
 
       <section>
@@ -63,6 +65,7 @@ function App() {
         </section>
       </main>
     </div>
+    </html>
   );
 }
 
