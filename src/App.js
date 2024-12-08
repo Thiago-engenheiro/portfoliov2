@@ -1,26 +1,23 @@
 import "./App.css";
-import BarraLateral from "./componentes/barraLateral";
-import CardCurriculo from "./componentes/cards/CardsHome/cardCurriculo";
-import CardGif from "./componentes/cards/CardsHome/cardGif";
-import CardMeusProjetos02 from "./componentes/cards/CardsHome/cardMeusProjetos2";
-import CardBlog from "./componentes/cards/CardsHome/cardBlog";
-import CardCarreira from "./componentes/cards/CardsHome/cardCarreira";
-import CardCertificado from "./componentes/cards/CardsHome/cardCertificado";
-import CardConhecimento from "./componentes/cards/CardsHome/cardConhecimento";
-import CardFaleComigo from "./componentes/cards/CardsHome/cardFaleComigo";
-import CardLinks from "./componentes/cards/CardsHome/cardLink";
-import CardMeusProjetos from "./componentes/cards/CardsHome/cardMeusProjetos";
-import CardMinhaFoto from "./componentes/cards/CardsHome/cardMinhaFoto";
-import CardMusica from "./componentes/cards/CardsHome/cardMusica";
-import CardSobreMim from "./componentes/cards/CardsHome/cardSobreMim";
-import CardSobreMimTopo from "./componentes/cards/CardsHome/cardSobremimTopo";
-import { Titulo } from "./componentes/Titulo/Titulo";
-import { Bolinhas } from "./componentes/cards/Bolinhas/bolinhas";
-import Bolinhas2 from "./componentes/cards/bolinha02";
-import Bolinhas3 from "./componentes/cards/bolinha03";
-import Bolinhas4 from "./componentes/cards/bolinha04";
-
-
+import BarraLateral from './componentes/barraLateral';
+import Titulo from './componentes/Titulo';
+import CardSobreMimTopo from './componentes/cards/CardsHome/cardSobremimTopo'
+import CardMinhaFoto from './componentes/cards/CardsHome/cardMinhaFoto'
+import CardLinks from './componentes/cards/CardsHome/cardLink'
+import CardSobreMim from './componentes/cards/CardsHome/cardSobreMim'
+import MusicPlayer from './componentes/cards/CardsHome/cardMusica'
+import CardBlog from './componentes/cards/CardsHome/cardBlog'
+import CardCarreira from './componentes/cards/CardsHome/cardCarreira'
+import CardGif from './componentes/cards/CardsHome/cardGif'
+import CardCertificado from './componentes/cards/CardsHome/cardCertificado'
+import CardMeusProjetos from './componentes/cards/CardsHome/cardMeusProjetos'
+import {Bolinhas} from './componentes/cards/Bolinhas/bolinhas'
+import Bolinhas2 from './componentes/cards/bolinha02'
+import Bolinhas3 from './componentes/cards/bolinha03'
+import Bolinha4 from './componentes/cards/bolinha04'
+import CardFaleComigo from './componentes/cards/CardsHome/cardFaleComigo'
+import CardCurriculo from './componentes/cards/CardsHome/cardCurriculo'
+import CardConhecimento from './componentes/cards/CardsHome/cardConhecimento'
 
 
 function App() {
@@ -29,41 +26,34 @@ function App() {
     <html>
     <div className="App">
 
-      <section>
+      <main className="Home">
 
-        <BarraLateral></BarraLateral>
+        <section className="continer__conteudoHome">
 
-      </section>
-
-      <main className="continerConteudo">
-
-        <section className="homeCards">
-
+          <BarraLateral></BarraLateral>
           <Titulo></Titulo>
           <CardSobreMimTopo></CardSobreMimTopo>
-          <CardSobreMim></CardSobreMim>
-          <CardMeusProjetos></CardMeusProjetos>
           <CardMinhaFoto></CardMinhaFoto>
-          <CardMeusProjetos02></CardMeusProjetos02>
           <CardLinks></CardLinks>
+          <CardSobreMim></CardSobreMim>
+          <Bolinhas></Bolinhas>
+          <MusicPlayer></MusicPlayer>
+          <CardBlog></CardBlog>
           <CardCarreira></CardCarreira>
+          <CardGif></CardGif>
+          <CardCertificado></CardCertificado>
+          <CardMeusProjetos></CardMeusProjetos>
           <Bolinhas2></Bolinhas2>
           <Bolinhas3></Bolinhas3>
-          <Bolinhas4></Bolinhas4>
-          <CardMusica></CardMusica>
-          <CardCurriculo></CardCurriculo>
-          <CardCertificado></CardCertificado>
-          <CardBlog></CardBlog>
-          <CardGif></CardGif>
+          <Bolinha4></Bolinha4>
           <CardFaleComigo></CardFaleComigo>
-          <Bolinhas></Bolinhas>
+          <CardCurriculo></CardCurriculo>
           <CardConhecimento></CardConhecimento>
-         
-          
         
-
         </section>
+
       </main>
+
     </div>
     </html>
   );

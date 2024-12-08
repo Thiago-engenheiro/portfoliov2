@@ -1,8 +1,8 @@
-.bolinhas04{
+.continerBolinha04{
 
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
    background: var(--corEscuroGradiente01);
     background-size: 100% 300%;
     animation: mover-gradient 5s infinite linear;
@@ -17,7 +17,7 @@
     border-radius: 10px;
     letter-spacing: 1px;
     overflow: hidden;
-    
+    margin: 40px 0 40px 0;
   }
   
   .Quatrobubble,
@@ -32,7 +32,7 @@
     height: 20px;
     border-radius: 50%;
     animation: direta2 20s ease-in-out infinite;
-    animation-delay: 10s;
+    animation-delay: 11s;
     opacity: 0;
   }
   

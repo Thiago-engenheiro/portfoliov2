@@ -1,7 +1,7 @@
 .cardSobreMim {
 
     display: flex;
-    height: calc(100% + 60px);
+    height: 100%;
     width: 100%;
     background: var(--corEscuroGradiente01);
     background-size: 100% 300%;
@@ -15,7 +15,8 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px 0px 10px 10px;
     letter-spacing: 1px;
-    margin: -60px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    
    
 }
 
@@ -30,7 +31,7 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 75%;
 
     
@@ -41,7 +42,6 @@
     font-family: var(--fonte02);
     font-size: 55px;
     text-transform: uppercase;
-    margin: 30px 0px 0px 0px;
     font-weight: bold;
   
 }
@@ -75,7 +75,7 @@
 .subtitulo {
 
     font-family: var(--fonte05);
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     margin: 0px 0px 0px 0px;
   

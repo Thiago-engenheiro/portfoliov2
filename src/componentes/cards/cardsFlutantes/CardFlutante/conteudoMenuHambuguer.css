@@ -4,8 +4,8 @@
     width: 250px;
     height: 200px;
     position: absolute;
-    top: 145px;
-    left: 125px;
+    top: 25px;
+    left: 150px;
     z-index: 10;
     
   }
@@ -108,9 +108,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
   gap: 20px;
   margin: 10 0px;
+  font-size: 14px;
    
 }
 
@@ -142,6 +142,8 @@
   height: 25px;
   background-color: transparent;
   transition: all 0.3s ease;
+  
+  
 }
 
 .cardFlutante1 li:hover .botaoExpandir {
@@ -153,13 +155,12 @@
 .botaoExpandir.active {
 
   transform: rotate(180deg); 
-    
+
 }
 
 .botaoExpandir.active:hover {
 
   animation: moverSeta02 0.8s infinite; 
-  transform: rotate(180deg); 
 
 }
 

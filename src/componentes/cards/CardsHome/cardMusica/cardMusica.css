@@ -1,11 +1,90 @@
 .cardMusica {
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: var(--corEscuroGradiente01);
+  background-size: 100% 300%;
+  animation: mover-gradient 5s infinite linear;
+   
+  padding: 20px;
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+  -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+  inset -4px -4px 6px 0 rgba(255,255,255,.2),
+  inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  letter-spacing: 1px;
+
+  }
+  
+  .music-player-container {
     display: flex;
-    height: 100%;
-    width: 100%;
-    background: var(--corEscuroGradiente01);
-    background-size: 100% 300%;
-    animation: mover-gradient 5s infinite linear;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    
+  }
+  
+  .animation-container {
+    position: relative;
+    z-index: 0;
+    height: 4rem; /* h-16 */
+    margin-bottom: -0.5rem; /* -mb-2 */
+    transition: all 200ms;
+    margin: -10px 0px 0px 0px;
+  }
+  
+  .animation-svg {
+
+    width: 90px;
+    height: 90px;
+    transition: all 500ms;
+    border: 4px solid #374151; /* border-zinc-400 */
+    border-radius: 9999px; /* rounded-full */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animação de rotação ativada quando a classe 'rotate' é aplicada */
+  .animation-svg.rotate {
+    animation: spin 3s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .circle-overlay {
+    position: absolute;
+    z-index: 10;
+    width: 1.80rem; /* w-8 */
+    height: 1.80rem; /* h-8 */
+    background-color: white;
+    border: 4px solid #374151; /* border-zinc-400 */
+    border-radius: 9999px; /* rounded-full */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    top: 2.8em; /* top-12 */
+    left: 2.8rem; /* left-12 */
+  }
+  
+  .continerMusic {
+
+    margin: 0px 0px 0px 0px;
+    border-radius: 12px;
+    
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
     box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
     -4px -4px 6px 0 rgba(116, 125, 136, .5), 
     inset -4px -4px 6px 0 rgba(255,255,255,.2),
@@ -14,7 +93,180 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     letter-spacing: 1px;
+  }
+  
+  .Play {
+    width: 20px;
+    cursor: pointer;
+    filter: invert(1);
+  }
 
-
-}
-
+  .buttonPlay {
+    --black-700: hsla(0 0% 12% / 1);
+    --border_radius: 9999px;
+    --transtion: 0.3s ease-in-out;
+    --offset: 2px;
+  
+    cursor: pointer;
+    position: relative;
+  
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  
+    transform-origin: center;
+  
+    padding: 1rem 2rem;
+    background-color: transparent;
+  
+    border: none;
+    border-radius: var(--border_radius);
+    transform: scale(calc(1 + (var(--active, 0) * 0.1)));
+    width: 175px;
+    height: 40px;
+    margin: 50px 0px 0px 12px;
+    transition: transform var(--transtion);
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),çp
+    -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    letter-spacing: 1px;
+    right: 0px;
+  }
+  
+  .buttonPlay::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-700);
+  
+    border-radius: var(--border_radius);
+    box-shadow: inset 0 0.5px hsl(0, 0%, 100%), inset 0 -1px 2px 0 hsl(0, 0%, 0%),
+      0px 4px 10px -4px hsla(0 0% 0% / calc(1 - var(--active, 0))),
+      0 0 0 calc(var(--active, 0) * 0.0rem) hsl(260 97% 50% / 0.75);
+  
+    transition: all var(--transtion);
+    z-index: 0;
+    border-radius: 10px;
+  }
+  
+  
+  
+  .buttonPlay:is(:hover, :focus-visible) {
+    --active: 1;
+  }
+  .buttonPlay:active {
+    transform: scale(1);
+  }
+  
+  .buttonPlay .dots_border {
+    --size_border: calc(100% + 2px);
+  
+    overflow: hidden;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: var(--size_border);
+    height: var(--size_border);
+    background-color: transparent;
+  
+    border-radius: var(--border_radius);
+    z-index: -10;
+  }
+  
+  .buttonPlay .dots_border::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: left;
+    transform: rotate(0deg);
+  
+    width: 100%;
+    height: 2rem;
+    background-color: white;
+  
+    mask: linear-gradient(transparent 0%, white 120%);
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .buttonPlay .sparkle {
+    position: relative;
+    z-index: 10;
+  
+    width: 1.75rem;
+  }
+  
+  .buttonPlay .sparkle .path {
+    fill: currentColor;
+    stroke: currentColor;
+  
+    transform-origin: center;
+  
+    color: hsl(0, 0%, 100%);
+  }
+  
+  .buttonPlay:is(:hover, :focus) .sparkle .path {
+    animation: path 1.5s linear 0.5s infinite;
+  }
+  
+  .buttonPlay .sparkle .path:nth-child(1) {
+    --scale_path_1: 1.2;
+  }
+  .buttonPlay .sparkle .path:nth-child(2) {
+    --scale_path_2: 1.2;
+  }
+  .buttonPlay .sparkle .path:nth-child(3) {
+    --scale_path_3: 1.2;
+  }
+  
+  @keyframes path {
+    0%,
+    34%,
+    71%,
+    100% {
+      transform: scale(1);
+    }
+    17% {
+      transform: scale(var(--scale_path_1, 1));
+    }
+    49% {
+      transform: scale(var(--scale_path_2, 1));
+    }
+    83% {
+      transform: scale(var(--scale_path_3, 1));
+    }
+  }
+  
+  .buttonPlay .text_button {
+    position: relative;
+    z-index: 10;
+  
+    background-image: linear-gradient(
+      90deg,
+      hsla(0 0% 100% / 1) 0%,
+      hsla(0 0% 100% / var(--active, 0)) 120%
+    );
+    background-clip: text;
+  
+    font-size: 1rem;
+    color: transparent;
+  }

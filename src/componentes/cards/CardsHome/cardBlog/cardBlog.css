@@ -1,6 +1,5 @@
 .cardBlog {
     
-    display: flex;
     height: 100%;
     width: 100%;
     background: var(--corEscuroGradiente01);
@@ -15,8 +14,46 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     letter-spacing: 1px;
-   
-   
+    position: relative;
 
 }
 
+.cardBlog__Apresentacao {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.cardBlog__texto {
+
+    font-size: 18px;
+    font-family: var(--fonte04);
+
+}
+
+.continer__CardTecnologias__texto {
+
+    margin: 20px 0px 0px 0px;
+
+}
+
+
+.iconeDecoracao {
+
+    width: 34px;
+    animation: rotate 25s linear infinite;
+
+}
+
+.cardBlog__Titulo {
+
+    font-family: var(--fontePrincipal);
+    font-size: 40px;
+    margin: 50px 0px 0px 0px;
+    position: absolute;
+    top: 25%;
+
+}

@@ -1,3 +1,3 @@
-import { CardMusica } from "./cardMusica"
+import { MusicPlayer } from "./cardMusica"
 
-export default CardMusica
+export default MusicPlayer

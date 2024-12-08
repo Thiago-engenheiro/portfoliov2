@@ -1,7 +1,7 @@
 .cardMeusProjetos {
 
     display: flex;
-    height: 100%;
+    height: calc(100%-40px);
     width: 100%;
     background: #020202;
     background-size: 100% 300%;
@@ -13,8 +13,37 @@
     inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 10px 10px 10px;
     letter-spacing: 1px;
+    position: relative;
+    margin: 0px 0px 40px 0px;
   
-    
+}
+
+.CardPortfolio__cima__titulo {
+
+    font-size: var(--fonte-secundaria);
+    font-size: 45px;
+  
+}
+
+ .continerCelular {
+
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 0;
+    position: absolute;
+    right: 350px;
+    z-index: 3;
+  
+   
+}
+
+.Celular {
+
+    width: 500px;
+    height: 500px;
+    transform: scaleX(-1);
+
 }

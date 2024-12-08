@@ -82,9 +82,17 @@
             var(--corEscuro04), 
             var(--corEscuro05), 
             var(--corEscuro04), 
-            var(--corEscuro06)
+            var(--corEscuro06)  
 
         );
+
+        --corEscuroGradiente03: linear-gradient(to bottom,
+
+            var(--corEscuro03),
+            var(--corEscuro04), 
+            var(--corEscuro05)
+
+         );
 
        
         /* cor Global */

@@ -1,6 +1,5 @@
 .cardCertificado {
 
-    display: flex;
     height: 100%;
     width: 100%;
     background: var(--corEscuroGradiente01);
@@ -15,7 +14,61 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     letter-spacing: 1px;
+    gap: 20;
+    position: relative;
     
-   
+}
+
+.cardCertificados__Apresentacao {
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  
+
+}
+
+.iconeDecoracao {
+
+    width: 45px;
+    animation: rotate 25s linear infinite;
+
+}
+
+.Seta02 {
+
+    filter: invert(1);
+    width: 2.3vw;
+    transition: border-color 0.3s ease;
+    height: 4.5vh;
+    transition: border-color 0.3s ease, transform 0.3s ease; 
+    border: 4px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 4px 8px white;
+
+}
+
+.Seta02:hover {
+  
+    transform: scale(1.1);
+    animation: rainbow-border 5s infinite linear;
+  
+}
+
+ 
+
+.cardCertificados__Titulo {
+
+    font-family: var(--fontePrincipal);
+    font-size: 40px;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    align-items: end;
+    height: 70%;
+    position: absolute;
+    top: 25%;
+
 }
 

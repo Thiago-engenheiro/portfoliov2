@@ -1,8 +1,8 @@
 .cardConhecimento{
 
     display: flex;
-    height: 100%;
-    width: 100%;
+    height: calc(100% -40px);
+    width: calc(100% -40px);
     background: var(--corEscuroGradiente01);
     background-size: 100% 300%;
     animation: mover-gradient 5s infinite linear;
@@ -15,6 +15,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     letter-spacing: 1px;
+    margin: 0 40px 40px 0;
 
 
 }

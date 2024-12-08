@@ -5,12 +5,11 @@ import { BotaoHambuguer } from '../botoes/botaoHambuguer/botaoHamburguer';
 
 export function BarraLateral () {
 
-   
     return (
 
         <aside className={`barra-lateral`}>
 
-            <nav>
+            <nav className=''>
 
                 <div>
 

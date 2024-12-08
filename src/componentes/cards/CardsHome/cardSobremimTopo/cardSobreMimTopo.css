@@ -16,7 +16,7 @@
     border-radius: 10px 10px 0px 0px;
     letter-spacing: 1px;
     position: relative;
-    
+    margin: 40px 0 0 0; 
     
 } 
 
@@ -47,7 +47,7 @@
     cursor: pointer;
     box-shadow: 2px 4px 8px white;
      
-  }
+}
   
 .Seta:hover {
   

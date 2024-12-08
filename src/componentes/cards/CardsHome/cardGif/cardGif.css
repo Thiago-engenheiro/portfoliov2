@@ -1,12 +1,12 @@
 .cardGif{
 
-    display: flex;
+    
     height: 100%;
     width: 100%;
     background: var(--corEscuroGradiente01);
     background-size: 100% 300%;
     animation: mover-gradient 5s infinite linear;
-    padding: 20px;
+    
     box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
     -4px -4px 6px 0 rgba(116, 125, 136, .5), 
     inset -4px -4px 6px 0 rgba(255,255,255,.2),
@@ -15,8 +15,68 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     letter-spacing: 1px;
-   
-   
+    position: relative;
 
 }
 
+.continercardGif {
+
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-end; /* Posiciona no final verticalmente */
+    height: 100%; /* Define a altura total do contêiner (se necessário) */
+}
+
+.meuGif {
+
+   width: 40%;
+   height: 95%;
+
+}
+
+
+.estrelas {
+    --black-700: hsla(0 0% 12% / 1);
+    --transtion: 0.3s ease-in-out;
+    --offset: 2px;
+    display: flex;
+    align-items: center;
+    transform-origin: center;
+    background-color: transparent;
+    border: none;
+    border-radius: var(--border_radius);
+    transform: scale(calc(1 + (var(--active, 0) * 0.1)));
+    transition: transform var(--transtion);
+    position: absolute;
+    width: 40x;
+    top: 20px;
+    left: 15px;
+   
+  }
+  
+  .estrelas .sparkle {
+ 
+    z-index: 10;
+    width: 3rem;
+  }
+  
+  .estrelas .sparkle .path {
+    fill: currentColor;
+    stroke: currentColor;
+    transform-origin: center;
+    color: black;
+    animation: path 1.5s linear 0.5s infinite;
+  }
+  
+  .estrelas .sparkle .path:nth-child(1) {
+    --scale_path_1: 1.2;
+  }
+  .estrelas .sparkle .path:nth-child(2) {
+    --scale_path_2: 1.2;
+  }
+  .estrelas .sparkle .path:nth-child(3) {
+    --scale_path_3: 1.2;
+  }
+ 
+  

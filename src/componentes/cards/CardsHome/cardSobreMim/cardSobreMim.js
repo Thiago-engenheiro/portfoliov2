@@ -9,8 +9,6 @@ export function CardSobreMim () {
 
             <div className='CardSobreMim__esquerdo'>
 
-                <img className='DecoracaoFlor' src="/imagens/cards/Vector.png" alt=""/>
-
                 <div className='titulos'>
 
                     <div>

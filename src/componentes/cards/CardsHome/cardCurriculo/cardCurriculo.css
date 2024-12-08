@@ -1,8 +1,7 @@
 .cardCurriculo {
 
-    display: flex;
     height: 100%;
-    width: 100%;
+    width: calc(100% - 40px);
     background: var(--corEscuroGradiente01);
     background-size: 100% 300%;
     animation: mover-gradient 5s infinite linear;
@@ -15,7 +14,234 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     letter-spacing: 1px;
-   
-   
+    position: relative;
+    margin: 0 40px 0 0;
 }
+
+.cardCurriculoApresentacao {
+
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.CardPortfolioTitulo {
+
+  position: absolute;
+  font-size: 40px;
+
+}
+
+.continerArquivo {
+
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+    
+}
+
+.continerArquivoTexto {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+   
+
+}
+
+.arquivoNome {
+
+    font-size: 25px;
+    text-align: start;
+
+}
+
+.arquivoTamanho {
+
+    font-size: 20px;
+    text-align: initial;
+    margin: -25px 0px 0px 0px;
+    
+
+}
+
+.iconeArquivo {
+
+    width: 115px;
+
+}
+
+
+.buttonbaixar {
+    --black-700: hsla(0 0% 12% / 1);
+    --border_radius: 9999px;
+    --transtion: 0.3s ease-in-out;
+    --offset: 2px;
+  
+    cursor: pointer;
+    position: relative;
+  
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  
+    transform-origin: center;
+  
+    padding: 1rem 2rem;
+    background-color: transparent;
+  
+    border: none;
+    border-radius: var(--border_radius);
+    transform: scale(calc(1 + (var(--active, 0) * 0.1)));
+    width: 250px;
+    height: 50px;
+    margin: 15px 0px 0px 0px;
+    transition: transform var(--transtion);
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .buttonbaixar::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-700);
+  
+    border-radius: var(--border_radius);
+    box-shadow: inset 0 0.5px hsl(0, 0%, 100%), inset 0 -1px 2px 0 hsl(0, 0%, 0%),
+      0px 4px 10px -4px hsla(0 0% 0% / calc(1 - var(--active, 0))),
+      0 0 0 calc(var(--active, 0) * 0.0rem) hsl(260 97% 50% / 0.75);
+  
+    transition: all var(--transtion);
+    z-index: 0;
+    border-radius: 10px;
+  }
+  
+  
+  
+  .buttonbaixar:is(:hover, :focus-visible) {
+    --active: 1;
+  }
+  .buttonbaixar:active {
+    transform: scale(1);
+  }
+  
+  .buttonbaixar .dots_border {
+    --size_border: calc(100% + 2px);
+  
+    overflow: hidden;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: var(--size_border);
+    height: var(--size_border);
+    background-color: transparent;
+  
+    border-radius: var(--border_radius);
+    z-index: -10;
+  }
+  
+  .buttonbaixar.dots_border::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: left;
+    transform: rotate(0deg);
+  
+    width: 100%;
+    height: 2rem;
+    background-color: white;
+  
+    mask: linear-gradient(transparent 0%, white 120%);
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .buttonbaixar .sparkle {
+    position: relative;
+    z-index: 10;
+  
+    width: 1.75rem;
+  }
+  
+  .buttonbaixar.sparkle .path {
+    fill: currentColor;
+    stroke: currentColor;
+  
+    transform-origin: center;
+  
+    color: hsl(0, 0%, 100%);
+  }
+  
+  .buttonbaixar:is(:hover, :focus) .sparkle .path {
+    animation: path 1.5s linear 0.5s infinite;
+  }
+  
+  .buttonbaixar .sparkle .path:nth-child(1) {
+    --scale_path_1: 1.2;
+  }
+  .buttonbaixar .sparkle .path:nth-child(2) {
+    --scale_path_2: 1.2;
+  }
+  .buttonbaixar .sparkle .path:nth-child(3) {
+    --scale_path_3: 1.2;
+  }
+  
+  @keyframes path {
+    0%,
+    34%,
+    71%,
+    100% {
+      transform: scale(1);
+    }
+    17% {
+      transform: scale(var(--scale_path_1, 1));
+    }
+    49% {
+      transform: scale(var(--scale_path_2, 1));
+    }
+    83% {
+      transform: scale(var(--scale_path_3, 1));
+    }
+  }
+  
+  .buttonbaixar .text_button {
+    position: relative;
+    z-index: 10;
+  
+    background-image: linear-gradient(
+      90deg,
+      hsla(0 0% 100% / 1) 0%,
+      hsla(0 0% 100% / var(--active, 0)) 120%
+    );
+    background-clip: text;
+  
+    font-size: 1rem;
+    color: transparent;
+  }
 
