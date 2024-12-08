@@ -48,9 +48,6 @@ export function CardGif () {
     </svg>
     </button>
 
-     
-        
-
         </section>
 
     );

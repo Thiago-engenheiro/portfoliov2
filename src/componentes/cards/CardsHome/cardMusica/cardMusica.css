@@ -17,14 +17,16 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   letter-spacing: 1px;
-
+  justify-content: center;
+  align-items: center;;
   }
   
   .music-player-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    user-select: none;
+    
+   
     
   }
   
@@ -34,7 +36,7 @@
     height: 4rem; /* h-16 */
     margin-bottom: -0.5rem; /* -mb-2 */
     transition: all 200ms;
-    margin: -10px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
   }
   
   .animation-svg {
@@ -124,7 +126,7 @@
     transform: scale(calc(1 + (var(--active, 0) * 0.1)));
     width: 175px;
     height: 40px;
-    margin: 50px 0px 0px 12px;
+    margin: 50px 0px 0px 0px;
     transition: transform var(--transtion);
     box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),çp
     -4px -4px 6px 0 rgba(116, 125, 136, .5), 

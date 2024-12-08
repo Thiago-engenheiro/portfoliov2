@@ -16,7 +16,7 @@ export function CardCurriculo () {
 
                 <div className='continerArquivo'>
 
-                        <img className="iconeArquivo" src="/decoracaoCard/text_snippet.png" alt="Ícone arquivo"/>
+                        <img className="iconeArquivo" src="/imagens/cards/text_snippet.png" alt="Ícone arquivo"/>
 
                         <div className='continerArquivoTexto'>
 
@@ -48,7 +48,7 @@ export function CardCurriculo () {
                     
                     <img
                         className='Play'
-                        src="/decoracaoCard/download.png"
+                        src="imagens/cards/download.png"
                         alt=""
                         // Dispara a função para alternar o estado
                     />

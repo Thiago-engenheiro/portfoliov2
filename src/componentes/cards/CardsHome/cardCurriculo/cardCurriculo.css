@@ -1,29 +1,27 @@
 .cardCurriculo {
 
-    height: 100%;
-    width: calc(100% - 40px);
-    background: var(--corEscuroGradiente01);
-    background-size: 100% 300%;
-    animation: mover-gradient 5s infinite linear;
-    padding: 20px;
-    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
-    -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    letter-spacing: 1px;
-    position: relative;
-    margin: 0 40px 0 0;
+  height: 100%;
+  width: calc(100% - 40px);
+  background: var(--corEscuroGradiente01);
+  background-size: 100% 300%;
+  animation: mover-gradient 5s infinite linear;
+  padding: 20px;
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+  -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+  inset -4px -4px 6px 0 rgba(255,255,255,.2),
+  inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  letter-spacing: 1px;
+  position: relative;
+  margin: 0 40px 0 0;
 }
 
 .cardCurriculoApresentacao {
 
-    display: flex;
-    text-transform: uppercase;
-    justify-content: space-between;
-    width: 100%;
+  text-transform: uppercase;
+  width: 100%;
 
 }
 
@@ -31,6 +29,7 @@
 
   position: absolute;
   font-size: 40px;
+  right: 20px;
 
 }
 
@@ -39,23 +38,23 @@
   display: flex;
   gap: 5px;
   align-items: center;
-  justify-content: end;
+  justify-content: start;
   width: 100%;
     
 }
 
 .continerArquivoTexto {
 
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
    
 
 }
 
 .arquivoNome {
 
-    font-size: 25px;
+    font-size: 20px;
     text-align: start;
 
 }
@@ -71,7 +70,7 @@
 
 .iconeArquivo {
 
-    width: 115px;
+  width: 75px;
 
 }
 

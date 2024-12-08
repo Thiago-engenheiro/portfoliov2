@@ -9,11 +9,7 @@ export function CardBlog () {
            
         <div className='cardBlog__Apresentacao'>
 
-            <h2 className='cardBlog__texto'>
-
-                Minhas melhores dicas 
-
-            </h2>
+                <img className='cardCertificadoIconeCards' src="/imagens/icones/blogPreto.png" alt=""/>
 
                 <img className='Seta02' src="/imagens/Setas/Seta.link.png" alt=""/>
 

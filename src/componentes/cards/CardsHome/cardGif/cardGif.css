@@ -1,6 +1,5 @@
 .cardGif{
 
-    
     height: 100%;
     width: 100%;
     background: var(--corEscuroGradiente01);
@@ -30,11 +29,10 @@
 
 .meuGif {
 
-   width: 40%;
-   height: 95%;
+  width: 45%;
+  height: 80%;
 
 }
-
 
 .estrelas {
     --black-700: hsla(0 0% 12% / 1);
@@ -50,7 +48,7 @@
     transition: transform var(--transtion);
     position: absolute;
     width: 40x;
-    top: 20px;
+    top: 30px;
     left: 15px;
    
   }

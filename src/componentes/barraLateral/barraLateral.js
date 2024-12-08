@@ -31,22 +31,6 @@ export function BarraLateral () {
 
                     </li>
 
-                    <li className='lista'>
-
-                        <div className='continerIcone'>
-
-                        <BotaoExpandir></BotaoExpandir>
-
-                            <p className='esconder'>
-
-                                Expandir
-
-                            </p>
-
-                        </div>
-                      
-                    </li>
-
                     <li className='listaAfastar lista listaAtiva'>
 
                     <a href="http://localhost:3000/" className='linkativo navegacaoLink'>
@@ -77,6 +61,22 @@ export function BarraLateral () {
 
                         </p>
 
+                    </li>
+
+                    <li className='lista'>
+
+                    <a href="http://localhost:3000/" className='navegacaoLink'>
+
+                        <img className="icone" src="/imagens/icones/business_center__branco.png" alt="Ícone Carreira"/>
+
+                    </a>
+
+                        <p className='esconder'>
+
+                            Carreira
+
+                        </p>
+                        
                     </li>
 
                     <li className='lista '>

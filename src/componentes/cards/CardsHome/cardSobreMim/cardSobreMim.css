@@ -1,7 +1,7 @@
 .cardSobreMim {
 
     display: flex;
-    height: 100%;
+    height: calc(100%+20px);
     width: 100%;
     background: var(--corEscuroGradiente01);
     background-size: 100% 300%;
@@ -15,24 +15,17 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px 0px 10px 10px;
     letter-spacing: 1px;
-    margin: 0px 0px 0px 0px;
-    
-   
-}
-
-.DecoracaoFlor {
-
-    width: 120px;
-    animation: rotate 25s linear infinite;
-    
+    margin: -20px 0px 0px 0px;
+     
 }
 
 .titulos {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 75%;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
 
     
 }
@@ -40,7 +33,7 @@
 .titulo__engenheiro {
 
     font-family: var(--fonte02);
-    font-size: 55px;
+    font-size: 60px;
     text-transform: uppercase;
     font-weight: bold;
   
@@ -49,7 +42,7 @@
 .subtitulo__engenheiro {
 
     font-family: var(--fonte02);
-    font-size: 45px;
+    font-size: 50px;
     text-transform: uppercase;
     margin: -15px 0px 0px 0px;
 }
@@ -65,7 +58,7 @@
 .frase__auxiliar {
   
     font-family: var(--fonte02);
-    font-size: 30px;
+    font-size: 35px;
     height: 40px;
     text-transform: uppercase;
     margin: -10px 0px 0px 0px;
@@ -75,7 +68,7 @@
 .subtitulo {
 
     font-family: var(--fonte05);
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     margin: 0px 0px 0px 0px;
   

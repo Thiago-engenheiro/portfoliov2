@@ -8,7 +8,7 @@ export function CardCertificado () {
 
             <div className='cardCertificados__Apresentacao'>
 
-                <img className='iconeDecoracao' src="/imagens/cards/Decoracao Circulo.png" alt=""/>
+                <img className='cardCertificadoIconeCards' src="/imagens/icones/certificado__modoEscuro.png" alt=""/>
 
                 <img className='Seta02' src="/imagens/Setas/Seta.link.png" alt=""/>
 
